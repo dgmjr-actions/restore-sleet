@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "sleet": {
+      "commands": [
+        "sleet"
+      ],
+      "version": "5.1.3"
+    }
+  }
+}

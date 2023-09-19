@@ -1,0 +1,21 @@
+name: Restore Sleet
+author: David G. Moore, Jr., <david@dgmjr.io>
+description: Restores the sleet tool
+
+branding:
+  icon: server
+  color: green
+
+runs:
+  using: composite
+  steps:
+    - id: Ensure-sleet-is-installed
+      shell: bash
+      run: |
+        sleetExists=$(dotnet tool list --global | grep sleet)
+        echo "Dotnet-file exists: $dotnetFileExists"
+        if [ -z "$dotnetFileExists" ]; then
+          dotnet tool update --global dotnet-file
+        else
+          dotnet tool install --global dotnet-file
+        fi
