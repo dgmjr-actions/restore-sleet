@@ -1,8 +1,9 @@
-name: Restore the sleet tool
+name: Restore Sleet
 author: David G. Moore, Jr., <david@dgmjr.io>
 description: Restores the sleet tool
+
 branding:
-  icon: file-plus
+  icon: server
   color: green
 
 runs:
